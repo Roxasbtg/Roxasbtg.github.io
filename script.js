@@ -10,20 +10,20 @@ document.getElementById("demo").innerHTML = "Roxasbtg is kewl";
 DO NOT COPY EXACT CODE
 
 1. Create a variable to store the state of the lightbulb.
-  The state of the lightbulb: Whether the light is ON of OFF
+  The state of the lightbulb: Whether the light is ON or OFF
                                                  (true)(false)
     DO NOT SET "ON" or "OFF" AS THE VARIABLE NAME
       USE true AND false
-  
+
   Variable syntax
     var VariableName = VariableValue;
-  
+
   You need to know if the lightbulb is on or off to toggle it!
 
 2. Create functions
   One for "turn on", "turn off", "switch state", "on click"
       FUNCTION NAMES CANNOT HAVE SPACES IN BETWEEN THEM, OR QUOTES AROUND THEM... actually it's too complex right now
-  
+
   Function syntax, how functions look:
     function FunctionName(argumentNames) {
       // Your code
@@ -32,10 +32,10 @@ DO NOT COPY EXACT CODE
 
   This is an EXAMPLE of how you DECLARE a function:
     DO NOT COPY THIS CODE. THIS HAS NOTHING TO DO WITH WHAT YOU'RE DOING
-    function sayHiOrBye(hiOrBye) { 
+    function sayHiOrBye(hiOrBye) {
       // FunctionName is "sayHiOrBye", argumentNames are "hiOrBye"
       // Arguments are variables used in a function
-      if(hiOrBye) { 
+      if(hiOrBye) {
         alert("Hi!");
       } else {
         alert("Bye!");
@@ -44,13 +44,13 @@ DO NOT COPY EXACT CODE
 
   This is how you CALL a function, do the code inside the function
     DO NOT COPY THIS CODE. THIS HAS NOTHING TO DO WITH WHAT YOU'RE DOING
-    
+
     sayHiOrBye(true); // Call 'sayHiOrBye' with the variable 'hiOrBye' be true
-  
+
   Try to guess the end result.
 
   Functions help simply the process
-    
+
 3. Write the functions
   Functions can do anything JavaScript can do...
   For this, just copy the code you wrote below that turns on the lightbulb
@@ -60,7 +60,7 @@ DO NOT COPY EXACT CODE
   DO THE SAME BUT CHANGE IT FOR THE TURN OFF FUNCTION
 
   Your functions don't do anything right now. You have to make them do things.
-  
+
 4. Write functions
       Write the "switch state" function:
         COPY IT
@@ -69,7 +69,7 @@ DO NOT COPY EXACT CODE
           // This uses XOR, google it if you want
         }
         SUBSTITUTE 'YourVariable' with the variable you used to store the state of the lightbulb
-      
+
       Write "on click" function:
         function onClick() {
           if(YourVariable) {
@@ -77,7 +77,7 @@ DO NOT COPY EXACT CODE
           } else {
             TurnOffFunction();
           }
-          switchState
+          switchState();
         }
         SUBSTITUTE 'TurnOnFunction' and 'TurnOffFunction' with respective functions
 
@@ -90,7 +90,7 @@ DO NOT COPY EXACT CODE
   Choose a method:
     addEventListener
     .onclick
-  
+
   ADDEVENTLISTENER:
     Element.addEventListener(Type, Function);
       Where Element is document.getElementById(id),
@@ -107,7 +107,7 @@ DO NOT COPY EXACT CODE
               What element this appies to
             Function is a function.
               What does it do
-  
+
     Tell the program what to do.
 
 6. Test it out!
@@ -117,7 +117,7 @@ DO NOT COPY EXACT CODE
       GOOD JOB
       HAVE A COOKIE
         document.cookie = "CookieFromJaPNaA=Property of Roxasbtg;";
-    
+
     NO:
       PRESS THIS KEY COMBINATION ON YOUR SITE
         UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT 'B' 'A'
@@ -169,11 +169,24 @@ var lb = document.getElementById("lb"),
     off: "https://www.w3schools.com/js/pic_bulboff.gif"
   };
 
-document.getElementById("demo").onclick = function () {
+var YouTube = true;
+function turnon(){
   lb.src = src.on;
-  document.getElementById("demo").onclick = function () {
-    lb.src = src.off;
-  };
-};
+}
+function turnoff(){
+  lb.src = src.off;
+}
+function switchState() {
+  YouTube ^= true;
+}
+function onClick() {
+  if(YouTube) {
+    turnon();
+  } else {
+    turnoff();
+  }
+  switchState();
+}
+lb.addEventListener("click", onClick);
 
 // END ----------- Roxasbtg -----------
