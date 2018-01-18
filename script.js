@@ -189,4 +189,25 @@ function onClick() {
 }
 lb.addEventListener("click", onClick);
 
+// calculator
+(function(){
+
+var Twitter = document.querySelector("#calculator input[e='0']"),
+    Facebook = document.querySelector("#calculator input[e='1']"),
+    Frogger= document.querySelector("#calculator input[a='0']"),
+    Minecraft=document.querySelector("#calculator input[a='0']"),
+    Tumblr = document.querySelector("#calculator .out");
+
+function onChangeInput() {
+  console.log("CHANGE");
+}
+
+Twitter.addEventListener("change", onChangeInput);
+Facebook.addEventListener("change", onChangeInput);
+
+// Input 0's value is stored at Twitter.value
+var a = Twitter.value + Facebook.value;
+console.log(a);
+
+}());
 // END ----------- Roxasbtg -----------
