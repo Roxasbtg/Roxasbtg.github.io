@@ -194,20 +194,39 @@ lb.addEventListener("click", onClick);
 
 var Twitter = document.querySelector("#calculator input[e='0']"),
     Facebook = document.querySelector("#calculator input[e='1']"),
-    Frogger= document.querySelector("#calculator input[a='0']"),
-    Minecraft=document.querySelector("#calculator input[a='0']"),
+    Frogger = document.querySelector("#calculator input[e='2']"),
+    Minecraft = document.querySelector("#calculator input[e='3']"),
+    instagram = document.querySelector("#calculator input[e='4']")
+    snapchat = document.querySelector("#calculator input[e= '5']")
+    Google = document.querySelector("#calculator input[e='6']")
+    Walmart = document.querySelector("#calculator input[e='7']")
     Tumblr = document.querySelector("#calculator .out");
 
-function onChangeInput() {
-  console.log("CHANGE");
+
+function onChangeInputPlus() {
+  Tumblr.innerHTML = Number(Twitter.value) + Number(Facebook.value);
+}
+function onChangeInputTimes() {
+  Tumblr.innerHTML = Number(Frogger.value) * Number(Minecraft.value);
+}
+function onChangeInputSubt(){
+  Tumblr.innerHTML = Number(instagram.value) - Number(snapchat.value);
+}
+function onChangeInputDivide(){
+  Tumblr.innerHTML = Number(Google.value) / Number(Walmart.value);
 }
 
-Twitter.addEventListener("change", onChangeInput);
-Facebook.addEventListener("change", onChangeInput);
+Twitter.addEventListener("change", onChangeInputPlus);
+Facebook.addEventListener("change", onChangeInputPlus);
+Frogger.addEventListener("change", onChangeInputTimes);
+Minecraft.addEventListener("change", onChangeInputTimes);
+instagram.addEventListener("change", onChangeInputSubt);
+snapchat.addEventListener("change", onChangeInputSubt);
+Google.addEventListener("change", onChangeInputDivide);
+Walmart.addEventListener("change", onChangeInputDivide);
 
 // Input 0's value is stored at Twitter.value
-var a = Twitter.value + Facebook.value;
-console.log(a);
+
 
 }());
 // END ----------- Roxasbtg -----------

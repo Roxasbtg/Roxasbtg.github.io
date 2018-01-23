@@ -1,5 +1,10 @@
+@keyframes rain {
+  0%{color: red;}
+  100%{color:green;}
+}
+
 body {
-  color: red;
+  animation: rain 7s linear fowards normal;
 }
 
 #demo {
