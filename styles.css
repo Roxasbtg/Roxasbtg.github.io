@@ -1,16 +1,37 @@
 @keyframes rain {
-  0%{color: red;}
-  100%{color:green;}
+    0%{
+        color: #FF0000;
+    }
+    20%{
+        color: #FFFF00;
+    }
+    40% {
+        color: #00FFFF;
+    }
+    60% {
+        color: #0000FF;
+    }
+    80% {
+        color: #FF00FF;
+    }
+    100% {
+        color: #FF0000
+    }
 }
 
 body {
-  animation: rain 7s linear fowards normal;
+    animation: rain 7s linear forwards normal;
 }
 
 #demo {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 #calculator {
-  color: #000;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#calculator input {
+    width: 5em;
 }

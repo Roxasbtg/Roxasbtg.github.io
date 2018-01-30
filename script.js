@@ -3,230 +3,87 @@
 // TPYJKEJ JASH CODEWD
 document.getElementById("demo").innerHTML = "Roxasbtg is kewl";
 
-// START ----------- JaPNaA -----------
-// FIXING YOUR PLAGERIZED LIGHTBULB BECAUSE IT'S BOTHERING ME
-/*
-
-DO NOT COPY EXACT CODE
-
-1. Create a variable to store the state of the lightbulb.
-  The state of the lightbulb: Whether the light is ON or OFF
-                                                 (true)(false)
-    DO NOT SET "ON" or "OFF" AS THE VARIABLE NAME
-      USE true AND false
-
-  Variable syntax
-    var VariableName = VariableValue;
-
-  You need to know if the lightbulb is on or off to toggle it!
-
-2. Create functions
-  One for "turn on", "turn off", "switch state", "on click"
-      FUNCTION NAMES CANNOT HAVE SPACES IN BETWEEN THEM, OR QUOTES AROUND THEM... actually it's too complex right now
-
-  Function syntax, how functions look:
-    function FunctionName(argumentNames) {
-      // Your code
-    }
-    SUBSTITUTE 'FunctionName' with name of function (YOU CHOOSE YOUR OWN)
-
-  This is an EXAMPLE of how you DECLARE a function:
-    DO NOT COPY THIS CODE. THIS HAS NOTHING TO DO WITH WHAT YOU'RE DOING
-    function sayHiOrBye(hiOrBye) {
-      // FunctionName is "sayHiOrBye", argumentNames are "hiOrBye"
-      // Arguments are variables used in a function
-      if(hiOrBye) {
-        alert("Hi!");
-      } else {
-        alert("Bye!");
-      }
-    }
-
-  This is how you CALL a function, do the code inside the function
-    DO NOT COPY THIS CODE. THIS HAS NOTHING TO DO WITH WHAT YOU'RE DOING
-
-    sayHiOrBye(true); // Call 'sayHiOrBye' with the variable 'hiOrBye' be true
-
-  Try to guess the end result.
-
-  Functions help simply the process
-
-3. Write the functions
-  Functions can do anything JavaScript can do...
-  For this, just copy the code you wrote below that turns on the lightbulb
-    and paste it into the "turn on" function
-      lb.src = src.on;
-  this line of code will execute when you call the function.
-  DO THE SAME BUT CHANGE IT FOR THE TURN OFF FUNCTION
-
-  Your functions don't do anything right now. You have to make them do things.
-
-4. Write functions
-      Write the "switch state" function:
-        COPY IT
-        function switchState() {
-          YourVariable ^= true;
-          // This uses XOR, google it if you want
-        }
-        SUBSTITUTE 'YourVariable' with the variable you used to store the state of the lightbulb
-
-      Write "on click" function:
-        function onClick() {
-          if(YourVariable) {
-            TurnOnFunction();
-          } else {
-            TurnOffFunction();
-          }
-          switchState();
-        }
-        SUBSTITUTE 'TurnOnFunction' and 'TurnOffFunction' with respective functions
-
-    I got lazy making you write 2 functions.
-
-5. Set the event listeners
-  REMOVE YOUR OLD 'onclick's FIRST
-  because then u will break it
-
-  Choose a method:
-    addEventListener
-    .onclick
-
-  ADDEVENTLISTENER:
-    Element.addEventListener(Type, Function);
-      Where Element is document.getElementById(id),
-              What element this appies to
-            Type is "click", etc.
-              What does it respond to
-            Function is a function.
-              What does it do
-      SUBSTITUTE 'Element' for 'lb', 'Type' for '"click"', Function for 'onClick'
-
-  .ONCLICK
-    Element.onclick = Function;
-      Where Element is document.getElementById(id),
-              What element this appies to
-            Function is a function.
-              What does it do
-
-    Tell the program what to do.
-
-6. Test it out!
-
-7. Does it work?
-    YES:
-      GOOD JOB
-      HAVE A COOKIE
-        document.cookie = "CookieFromJaPNaA=Property of Roxasbtg;";
-
-    NO:
-      PRESS THIS KEY COMBINATION ON YOUR SITE
-        UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT 'B' 'A'
-
-*/
-
-(function () {
-  var a = [],
-    c = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-
-  function openAns() {
-    open("ans.js", "_blank");
-  }
-
-  addEventListener("keydown", function (e) {
-    a.push(e.keyCode);
-
-    var cl = c.length,
-      s = true;
-
-    while (a.length > 10) {
-      a.shift();
-    }
-
-    for (let i = 0; i < cl; i++) {
-      if (a[i] != c[i]) {
-        s = false;
-        break;
-      }
-    }
-
-    if (s) {
-      openAns();
-    }
-  });
-
-}());
-
-
-// END ------------ JaPNaA ------------
-
-
-
 // START ---------- Roxasbtg ----------
 
 var lb = document.getElementById("lb"),
-  src = {
-    on: "https://www.w3schools.com/js/pic_bulbon.gif",
-    off: "https://www.w3schools.com/js/pic_bulboff.gif"
-  };
+    src = {
+        on: "https://www.w3schools.com/js/pic_bulbon.gif",
+        off: "https://www.w3schools.com/js/pic_bulboff.gif"
+    };
 
 var YouTube = true;
-function turnon(){
-  lb.src = src.on;
+
+function turnon() {
+    lb.src = src.on;
 }
-function turnoff(){
-  lb.src = src.off;
+
+function turnoff() {
+    lb.src = src.off;
 }
+
 function switchState() {
-  YouTube ^= true;
+    YouTube ^= true;
 }
+
 function onClick() {
-  if(YouTube) {
-    turnon();
-  } else {
-    turnoff();
-  }
-  switchState();
+    if (YouTube) {
+        turnon();
+    } else {
+        turnoff();
+    }
+    switchState();
 }
 lb.addEventListener("click", onClick);
 
 // calculator
-(function(){
+(function () {
+    var somethingOtherThanTwitterPlease = document.querySelector("#calculator input[e='0']"),
+        somethingOtherThanFacebookPlease = document.querySelector("#calculator input[e='1']"),
+        somethingOtherThanFroggerPlease = document.querySelector("#calculator input[e='2']"),
+        somethingOtherThanMinecraftPlease = document.querySelector("#calculator input[e='3']"),
+        somethingOtherThanInstagramPlease = document.querySelector("#calculator input[e='4']"), // Roxasbtg forgot commas, I put them down for him. 
+        somethingOtherThanSnapchatPlease = document.querySelector("#calculator input[e= '5']"), // This doesn't cause a bug, but does make a 
+        somethingOtherThanGooglePlease = document.querySelector("#calculator input[e='6']"), // "bad initialization"
+        somethingOtherThanWalmartPlease = document.querySelector("#calculator input[e='7']"),
+        somethingOtherThanTumblrPlease = document.querySelector("#calculator .out");
 
-var Twitter = document.querySelector("#calculator input[e='0']"),
-    Facebook = document.querySelector("#calculator input[e='1']"),
-    Frogger = document.querySelector("#calculator input[e='2']"),
-    Minecraft = document.querySelector("#calculator input[e='3']"),
-    instagram = document.querySelector("#calculator input[e='4']")
-    snapchat = document.querySelector("#calculator input[e= '5']")
-    Google = document.querySelector("#calculator input[e='6']")
-    Walmart = document.querySelector("#calculator input[e='7']")
-    Tumblr = document.querySelector("#calculator .out");
+    function setOut(e) {
+        somethingOtherThanTumblrPlease.innerHTML = e;
+    }
 
+    function getVal(e) {
+        return parseFloat(e.value) || 0;
+    }
 
-function onChangeInputPlus() {
-  Tumblr.innerHTML = Number(Twitter.value) + Number(Facebook.value);
-}
-function onChangeInputTimes() {
-  Tumblr.innerHTML = Number(Frogger.value) * Number(Minecraft.value);
-}
-function onChangeInputSubt(){
-  Tumblr.innerHTML = Number(instagram.value) - Number(snapchat.value);
-}
-function onChangeInputDivide(){
-  Tumblr.innerHTML = Number(Google.value) / Number(Walmart.value);
-}
+    function onChangeInputPlus() {
+        setOut(getVal(somethingOtherThanTwitterPlease) + getVal(somethingOtherThanFacebookPlease));
+    }
 
-Twitter.addEventListener("change", onChangeInputPlus);
-Facebook.addEventListener("change", onChangeInputPlus);
-Frogger.addEventListener("change", onChangeInputTimes);
-Minecraft.addEventListener("change", onChangeInputTimes);
-instagram.addEventListener("change", onChangeInputSubt);
-snapchat.addEventListener("change", onChangeInputSubt);
-Google.addEventListener("change", onChangeInputDivide);
-Walmart.addEventListener("change", onChangeInputDivide);
+    function onChangeInputTimes() {
+        setOut(getVal(somethingOtherThanFroggerPlease) * getVal(somethingOtherThanMinecraftPlease));
+    }
 
-// Input 0's value is stored at Twitter.value
+    function onChangeInputSubt() {
+        setOut(getVal(somethingOtherThanInstagramPlease) - getVal(somethingOtherThanSnapchatPlease));
+    }
 
+    function onChangeInputDivide() {
+        setOut(getVal(somethingOtherThanGooglePlease) / getVal(somethingOtherThanWalmartPlease));
+    }
 
+    function aelC(f, ...el) { // aelC stands for "add event listener change"
+        for (let i of el) {
+            i.addEventListener("change", f);
+
+            // makes it more responsive
+            i.addEventListener("keydown", f);
+            i.addEventListener("keyup", f);
+        }
+    }
+
+    aelC(onChangeInputPlus, somethingOtherThanTwitterPlease, somethingOtherThanFacebookPlease);
+    aelC(onChangeInputTimes, somethingOtherThanFroggerPlease, somethingOtherThanMinecraftPlease);
+    aelC(onChangeInputSubt, somethingOtherThanInstagramPlease, somethingOtherThanSnapchatPlease);
+    aelC(onChangeInputDivide, somethingOtherThanGooglePlease, somethingOtherThanWalmartPlease);
 }());
 // END ----------- Roxasbtg -----------
