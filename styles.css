@@ -1,26 +1,26 @@
 @keyframes rain {
     0%{
-        color: #FF0000;
+        color: #800000;
     }
     20%{
-        color: #FFFF00;
+        color: #7f8000;
     }
     40% {
-        color: #00FFFF;
+        color: #007f80;
     }
     60% {
-        color: #0000FF;
+        color: #000080;
     }
     80% {
-        color: #FF00FF;
+        color: #80007f;
     }
     100% {
-        color: #FF0000
+        color: #800000;
     }
 }
 
 body {
-    animation: rain 7s linear forwards normal;
+    animation: rain 7s linear forwards normal infinite;
 }
 
 #demo {
@@ -34,4 +34,9 @@ body {
 
 #calculator input {
     width: 5em;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.15s;
 }
