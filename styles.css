@@ -41,3 +41,5 @@ a {
     transition: 0.15s;
     color: #0000ee; /* this is the default link color, but adding this will prevent visited links going purple, which I find is ugly */
 }
+
+/* ::-webkit-scrollbar */
