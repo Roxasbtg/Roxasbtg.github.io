@@ -60,18 +60,18 @@ lb.addEventListener("click", onClick);
 
 // calculator
 (function () {
-    var somethingOtherThanTwitterPlease = document.querySelector("#calculator input[e='0']"),
-        somethingOtherThanFacebookPlease = document.querySelector("#calculator input[e='1']"),
-        somethingOtherThanFroggerPlease = document.querySelector("#calculator input[e='2']"),
-        somethingOtherThanMinecraftPlease = document.querySelector("#calculator input[e='3']"),
-        somethingOtherThanInstagramPlease = document.querySelector("#calculator input[e='4']"), // Roxasbtg forgot commas, I put them down for him. 
-        somethingOtherThanSnapchatPlease = document.querySelector("#calculator input[e= '5']"), // This doesn't cause a bug, but does make a 
-        somethingOtherThanGooglePlease = document.querySelector("#calculator input[e='6']"), // "bad initialization"
-        somethingOtherThanWalmartPlease = document.querySelector("#calculator input[e='7']"),
-        somethingOtherThanTumblrPlease = document.querySelector("#calculator .out");
+    var a = document.querySelector("#calculator input[e='0']"),
+        b = document.querySelector("#calculator input[e='1']"),
+        c = document.querySelector("#calculator input[e='2']"),
+        d = document.querySelector("#calculator input[e='3']"),
+        e = document.querySelector("#calculator input[e='4']"), // Roxasbtg forgot commas, I put them down for him. 
+        f = document.querySelector("#calculator input[e= '5']"), // This doesn't cause a bug, but does make a 
+        g = document.querySelector("#calculator input[e='6']"), // "bad initialization"
+        h = document.querySelector("#calculator input[e='7']"),
+        i = document.querySelector("#calculator .out");
 
     function setOut(e) {
-        somethingOtherThanTumblrPlease.innerHTML = e;
+        i.innerHTML = e;
     }
 
     function getVal(e) {
@@ -79,19 +79,19 @@ lb.addEventListener("click", onClick);
     }
 
     function onChangeInputPlus() {
-        setOut(getVal(somethingOtherThanTwitterPlease) + getVal(somethingOtherThanFacebookPlease));
+        setOut(getVal(a) + getVal(b));
     }
 
     function onChangeInputTimes() {
-        setOut(getVal(somethingOtherThanFroggerPlease) * getVal(somethingOtherThanMinecraftPlease));
+        setOut(getVal(c) * getVal(d));
     }
 
     function onChangeInputSubt() {
-        setOut(getVal(somethingOtherThanInstagramPlease) - getVal(somethingOtherThanSnapchatPlease));
+        setOut(getVal(e) - getVal(f));
     }
 
     function onChangeInputDivide() {
-        setOut(getVal(somethingOtherThanGooglePlease) / getVal(somethingOtherThanWalmartPlease));
+        setOut(getVal(g) / getVal(h));
     }
 
     function aelC(f, ...el) { // aelC stands for "add event listener change"
@@ -104,9 +104,9 @@ lb.addEventListener("click", onClick);
         }
     }
 
-    aelC(onChangeInputPlus, somethingOtherThanTwitterPlease, somethingOtherThanFacebookPlease);
-    aelC(onChangeInputTimes, somethingOtherThanFroggerPlease, somethingOtherThanMinecraftPlease);
-    aelC(onChangeInputSubt, somethingOtherThanInstagramPlease, somethingOtherThanSnapchatPlease);
-    aelC(onChangeInputDivide, somethingOtherThanGooglePlease, somethingOtherThanWalmartPlease);
+    aelC(onChangeInputPlus, a, b);
+    aelC(onChangeInputTimes, c, d);
+    aelC(onChangeInputSubt, e, f);
+    aelC(onChangeInputDivide, g, h);
 }());
 // END ----------- Roxasbtg -----------
