@@ -42,4 +42,12 @@ a {
     color: #0000ee; /* this is the default link color, but adding this will prevent visited links going purple, which I find is ugly */
 }
 
+#ad {
+    position: fixed;
+    top: -128px;
+    left: -128px;
+    opacity: 0.001;
+    z-index: -999;
+}
+
 /* ::-webkit-scrollbar */
