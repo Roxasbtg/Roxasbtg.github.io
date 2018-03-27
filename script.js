@@ -117,6 +117,15 @@ lb.addEventListener("click", onClick);
 
     Math.TAU = Math.PI * 2;
 
+    var grd = x.createLinearGradient(0, 0, 600, 0);
+    grd.addColorStop(0, "#FF0000");
+    grd.addColorStop(1, "#FFFFFF");
+    
+    x.fillStyle = grd;
+    x.fillRect(10, 10, 150, 80);
+
+    x.fillStyle = "#000000";
+
     x.moveTo(1, 2);
     x.lineTo(200, 100);
     x.stroke();
@@ -129,4 +138,4 @@ lb.addEventListener("click", onClick);
     x.fillText("LOL you can see this", 10, 50);
 }());
 
-// END ----------- Roxasbtg -----------
+// END ----------- Roxasbtg ----------
