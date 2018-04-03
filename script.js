@@ -121,7 +121,7 @@ lb.addEventListener("click", onClick);
 (function () {
     const C = document.getElementById("canvasTest"),
         x = C.getContext('2d'),
-        mario = getImage("mario.png", marioCallback);
+        mario = getImage("mario[1].png", marioCallback);
 
     Math.TAU = Math.PI * 2;
 
