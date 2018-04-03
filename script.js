@@ -1,5 +1,12 @@
 // document.body.appendChild(document.createTextNode(" and JaP is kewl"));
 
+function getImage(e, c) {
+  var a = new Image();
+  a.src = e;
+  a.addEventListener("load", c);
+  return a;
+}
+
 (function () {
     var e = document.getElementById("tableOfContents"),
         x = document.getElementsByTagName("h1"),
@@ -113,7 +120,8 @@ lb.addEventListener("click", onClick);
 // Canvas
 (function () {
     const C = document.getElementById("canvasTest"),
-        x = C.getContext('2d');
+        x = C.getContext('2d'),
+        mario = getImage("mario.png", marioCallback);
 
     Math.TAU = Math.PI * 2;
 
@@ -136,6 +144,10 @@ lb.addEventListener("click", onClick);
 
     x.font = "30px Arial";
     x.fillText("LOL you can see this", 10, 50);
+    
+    function marioCallback() {
+      x.drawImage(mario, 60, 60, 64, 64);
+    }
 }());
 
 // END ----------- Roxasbtg ----------
