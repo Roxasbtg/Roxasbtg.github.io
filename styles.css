@@ -27,15 +27,6 @@ body {
     font-weight: bold;
 }
 
-#calculator {
-    color: #000;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#calculator input {
-    width: 5em;
-}
-
 a {
     text-decoration: none;
     transition: 0.15s;
