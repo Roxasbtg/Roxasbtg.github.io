@@ -11,7 +11,7 @@ const C = document.getElementById("canvasTest"),
 
 Math.TAU = Math.PI * 2;
 
-var grd = x.createLinearGradient(0, 0, 600, 0);
+var grd = x.createLinearGradient(0, 0, 150, 0);
 grd.addColorStop(0, "#FF0000");
 grd.addColorStop(1, "#FFFFFF");
 
